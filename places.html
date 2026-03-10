@@ -2,27 +2,25 @@
 <html>
 
 <head>
-
-<title>Culture of Solapur</title>
-<link rel="stylesheet" href="css/style.css">
+<title>Places in Solapur</title>
+<link rel="stylesheet" href="style.css">
 
 <style>
 
-.gallery
-{
-display:flex;
-flex-wrap:wrap;
-gap:15px;
-margin-top:15px;
+/* gallery for images */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px;
+margin-top:10px;
 }
 
-.gallery img
-{
-width:250px;
-height:180px;
+.gallery img{
+width:100%;
+border-radius:8px;
+height:150px;
 object-fit:cover;
-border-radius:10px;
-box-shadow:0px 4px 8px gray;
 }
 
 </style>
@@ -30,10 +28,6 @@ box-shadow:0px 4px 8px gray;
 </head>
 
 <body>
-
-<header>
-
-<h1>Culture of Solapur</h1>
 
 <nav>
 <a href="index.html">Home</a>
@@ -44,133 +38,90 @@ box-shadow:0px 4px 8px gray;
 <a href="enquiry.html">Enquiry</a>
 </nav>
 
-</header>
+<div class="container">
 
+<h2>Important Places</h2>
 
-<section>
+<div class="grid">
 
-<h2>Festivals of Solapur</h2>
+<!-- Siddheshwar Temple -->
 
-<h3>Siddheshwar Yatra</h3>
+<div class="card">
 
-<p>
-One of the largest festivals in Solapur is the Siddheshwar Yatra which is
-celebrated in honor of Shri Siddheshwar. Devotees participate in religious
-ceremonies and large processions during this festival.
-</p>
-
-<p>
-The festival takes place every year in January and attracts thousands of
-devotees from different parts of Maharashtra and neighboring states.
-</p>
+<h3>Siddheshwar Temple</h3>
 
 <div class="gallery">
+<img src="images/siddeshwar.jpg" alt="Siddheshwar Temple">
+<img src="images/siddeshwar_night.jpg" alt="Siddheshwar Temple Night View">
+</div>
 
-<img src="images/siddeshwar 1.jpg">
-<img src="images/siddeshwar 2.jpg">
-<img src="images/siddeshwar 3.jpg">
-<img src="images/siddeshwar 4.jpg">
+<p>
+Siddheshwar Temple is one of the most important spiritual landmarks in Solapur. 
+Dedicated to Lord Siddheshwar, a form of Lord Shiva, the temple is located near 
+the peaceful Siddheshwar Lake in the center of the city.
+</p>
+
+<p>
+Thousands of devotees visit the temple every day. The temple becomes especially 
+crowded during the Siddheshwar Yatra festival held every year in January.
+</p>
 
 </div>
 
-</section>
 
+<!-- Pandharpur -->
 
-<section>
+<div class="card">
 
-<h3>Ashadhi Wari – Pandharpur</h3>
-
-<p>
-Ashadhi Wari is a famous pilgrimage where devotees walk long distances
-to reach Pandharpur while singing devotional songs dedicated to Lord Vitthal.
-</p>
-
-<p>
-Millions of devotees participate in this spiritual journey every year,
-making Pandharpur one of the most important pilgrimage centers in Maharashtra.
-</p>
+<h3>Pandharpur</h3>
 
 <div class="gallery">
+<img src="images/pandharpur1.jpg" alt="Pandharpur Temple">
+<img src="images/pandharpur2.jpg" alt="Pandharpur Vitthal Temple">
+</div>
 
-<img src="images/Temple1.jpg">
-<img src="images/Temple_2.jpg">
-<img src="images/Temple_3.jpg">
-<img src="images/Temple_4.jpg">
+<p>
+Pandharpur is one of the most sacred pilgrimage towns in Maharashtra and is 
+located about 70 km from Solapur. It is famous for the Vitthal Rukmini Temple 
+dedicated to Lord Vitthal.
+</p>
+
+<p>
+The town becomes a major spiritual center during the Ashadhi and Kartiki Ekadashi 
+festivals when millions of devotees participate in the Wari pilgrimage.
+</p>
 
 </div>
 
-</section>
 
+<!-- Tuljapur -->
 
-<section>
+<div class="card">
 
-<h3>Tuljapur Religious Tradition</h3>
-
-<p>
-Tuljapur is an important religious destination near Solapur known for the
-Tulja Bhavani Temple. The goddess Tulja Bhavani is worshipped by devotees
-from across Maharashtra.
-</p>
-
-<p>
-The temple becomes especially crowded during the Navratri festival when
-thousands of pilgrims visit to seek blessings from the goddess.
-</p>
+<h3>Tuljapur</h3>
 
 <div class="gallery">
+<img src="images/tuljapur1.jpg" alt="Tuljapur Temple">
+<img src="images/tuljapur2.jpg" alt="Tulja Bhavani Temple">
+<img src="images/tuljapur3.jpg" alt="Tuljapur Temple Entrance">
+</div>
 
-<img src="images/Tulja-Bhavani-Temple-Tuljapur-Maharashtra.jpg">
-<img src="images/tuljapur4.jpg">
+<p>
+Tuljapur is a famous pilgrimage destination near Solapur known for the 
+Tulja Bhavani Temple dedicated to Goddess Bhavani. Devotees from across 
+Maharashtra visit this sacred temple throughout the year.
+</p>
 
 </div>
 
-</section>
 
+</div>
 
-<section>
-
-<h2>Local Traditions</h2>
-
-<p>
-The culture of Solapur reflects a mix of Marathi and Kannada traditions.
-People celebrate religious festivals, community gatherings, and cultural
-programs throughout the year.
-</p>
-
-<p>
-Music, devotional songs, and temple rituals are an important part of
-everyday life in the region.
-</p>
-
-</section>
-
-
-<section>
-
-<h2>Handloom and Textile Heritage</h2>
-
-<p>Solapur is famous for its textile products such as:</p>
-
-<ul>
-<li>Solapur Chaddars (bed sheets)</li>
-<li>Cotton towels</li>
-<li>Handloom fabrics</li>
-</ul>
-
-<p>
-These products are known for their quality and traditional designs and
-are exported across India.
-</p>
-
-</section>
-
+</div>
 
 <footer>
-
-<p>Culture and Traditions of Solapur</p>
-
+Explore Spiritual Solapur
 </footer>
 
 </body>
-
 </html>
