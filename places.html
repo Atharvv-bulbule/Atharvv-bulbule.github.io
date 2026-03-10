@@ -4,6 +4,27 @@
 <head>
 <title>Places in Solapur</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+
+/* gallery for images */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:10px;
+margin-top:10px;
+}
+
+.gallery img{
+width:100%;
+border-radius:8px;
+height:150px;
+object-fit:cover;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -23,33 +44,76 @@
 
 <div class="grid">
 
+<!-- Siddheshwar Temple -->
+
 <div class="card">
+
 <h3>Siddheshwar Temple</h3>
-<p>
-One of the most important spiritual landmarks in Solapur dedicated to Lord Siddheshwar. The temple is located near Siddheshwar Lake and attracts thousands of devotees every day.
-</p>
+
+<div class="gallery">
+<img src="images/siddeshwar.jpg" alt="Siddheshwar Temple">
+<img src="images/siddeshwar_night.jpg" alt="Siddheshwar Temple Night View">
 </div>
 
+<p>
+Siddheshwar Temple is one of the most important spiritual landmarks in Solapur. 
+Dedicated to Lord Siddheshwar, a form of Lord Shiva, the temple is located near 
+the peaceful Siddheshwar Lake in the center of the city.
+</p>
+
+<p>
+Thousands of devotees visit the temple every day. The temple becomes especially 
+crowded during the Siddheshwar Yatra festival held every year in January.
+</p>
+
+</div>
+
+
+<!-- Pandharpur -->
+
 <div class="card">
+
 <h3>Pandharpur</h3>
-<p>
-Located about 70 km from Solapur, Pandharpur is one of the most sacred pilgrimage towns famous for the Vitthal Rukmini Temple and the Wari pilgrimage.
-</p>
+
+<div class="gallery">
+<img src="images/pandharpur1.jpg" alt="Pandharpur Temple">
+<img src="images/pandharpur2.jpg" alt="Pandharpur Vitthal Temple">
 </div>
 
-<div class="card">
-<h3>Akkalkot</h3>
 <p>
-A spiritual destination located 40 km from Solapur known for the temple of Shri Swami Samarth Maharaj.
+Pandharpur is one of the most sacred pilgrimage towns in Maharashtra and is 
+located about 70 km from Solapur. It is famous for the Vitthal Rukmini Temple 
+dedicated to Lord Vitthal.
 </p>
+
+<p>
+The town becomes a major spiritual center during the Ashadhi and Kartiki Ekadashi 
+festivals when millions of devotees participate in the Wari pilgrimage.
+</p>
+
 </div>
 
+
+<!-- Tuljapur -->
+
 <div class="card">
-<h3>Solapur Fort</h3>
-<p>
-Also called Bhuikot Fort, this historic monument reflects medieval military architecture and represents Solapur's rich history.
-</p>
+
+<h3>Tuljapur</h3>
+
+<div class="gallery">
+<img src="images/tuljapur1.jpg" alt="Tuljapur Temple">
+<img src="images/tuljapur2.jpg" alt="Tulja Bhavani Temple">
+<img src="images/tuljapur3.jpg" alt="Tuljapur Temple Entrance">
 </div>
+
+<p>
+Tuljapur is a famous pilgrimage destination near Solapur known for the 
+Tulja Bhavani Temple dedicated to Goddess Bhavani. Devotees from across 
+Maharashtra visit this sacred temple throughout the year.
+</p>
+
+</div>
+
 
 </div>
 
