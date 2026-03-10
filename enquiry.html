@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Tourist Enquiry</title>
 <link rel="stylesheet" href="style.css">
 
 <script>
 
-function submitForm(){
+function validateForm(){
 
 let name=document.getElementById("name").value;
 let email=document.getElementById("email").value;
-let country=document.getElementById("country").value;
-let message=document.getElementById("message").value;
 
-if(name=="" || email=="" || country==""){
-alert("Please fill all required details");
+if(name=="" || email==""){
+alert("Please fill required fields");
 return false;
 }
 
-alert("Thank you "+name+"! Your enquiry has been submitted.");
+alert("Thank you! Your enquiry has been submitted.");
 return true;
 
 }
@@ -28,10 +27,6 @@ return true;
 </head>
 
 <body>
-
-<header>
-<h1>Tourist Enquiry</h1>
-</header>
 
 <nav>
 <a href="index.html">Home</a>
@@ -44,21 +39,17 @@ return true;
 
 <div class="container">
 
-<h2>Ask for Travel Information</h2>
+<h2>Tourist Enquiry Form</h2>
 
-<form onsubmit="return submitForm()">
+<form onsubmit="return validateForm()">
 
-<label>Name</label>
-<input type="text" id="name">
+<input type="text" id="name" placeholder="Your Name">
 
-<label>Email</label>
-<input type="email" id="email">
+<input type="email" id="email" placeholder="Your Email">
 
-<label>Country</label>
-<input type="text" id="country">
+<input type="text" placeholder="Country">
 
-<label>Message</label>
-<textarea id="message"></textarea>
+<textarea placeholder="Your Message"></textarea>
 
 <button type="submit">Submit</button>
 
