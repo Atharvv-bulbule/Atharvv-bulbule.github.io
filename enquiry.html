@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquiry – Solapur</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">🪔 Sola<span>pur</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="travel.html">Travel Guide</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <h1>Tourist Enquiry</h1>
+    <p>Planning a visit to Solapur? Share your details and we will help you plan the perfect trip.</p>
+  </div>
+
+  <div class="enquiry-section">
+    <div class="enquiry-inner">
+      <h2>Tell Us About Your Visit</h2>
+      <p>Fill in the details below and our team will get back to you with personalized travel assistance.</p>
+
+      <div id="enquiry-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" placeholder="e.g. Ramesh Patil" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="e.g. ramesh@example.com" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" placeholder="e.g. 9876543210" maxlength="10" />
+          </div>
+          <div class="form-group">
+            <label for="city">Your City / State</label>
+            <input type="text" id="city" placeholder="e.g. Pune, Maharashtra" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="travelDate">Planned Visit Date</label>
+            <input type="date" id="travelDate" />
+          </div>
+          <div class="form-group">
+            <label for="groupSize">Group Size</label>
+            <select id="groupSize">
+              <option value="">-- Select --</option>
+              <option value="solo">Solo Traveler</option>
+              <option value="couple">Couple (2 people)</option>
+              <option value="small">Small Group (3–5 people)</option>
+              <option value="family">Family (6–10 people)</option>
+              <option value="large">Large Group (10+ people)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="interest">Primary Interest *</label>
+          <select id="interest">
+            <option value="">-- Select your main interest --</option>
+            <option value="spiritual">Spiritual & Pilgrimage</option>
+            <option value="history">History & Heritage</option>
+            <option value="culture">Culture & Festivals</option>
+            <option value="food">Local Food & Cuisine</option>
+            <option value="textiles">Handloom & Textiles</option>
+            <option value="general">General Tourism</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="places">Places You Wish to Visit</label>
+          <select id="places">
+            <option value="">-- Select destination --</option>
+            <option value="siddheshwar">Siddheshwar Temple</option>
+            <option value="pandharpur">Pandharpur</option>
+            <option value="akkalkot">Akkalkot</option>
+            <option value="fort">Solapur Fort (Bhuikot Fort)</option>
+            <option value="all">All Destinations</option>
+            <option value="other">Other / Not Sure Yet</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="transport">Preferred Mode of Transport to Solapur</label>
+          <select id="transport">
+            <option value="">-- Select transport --</option>
+            <option value="road">By Road (Bus / Car)</option>
+            <option value="rail">By Rail (Train)</option>
+            <option value="air">By Air + Onward Road/Train</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message or Special Requests *</label>
+          <textarea id="message" rows="5" placeholder="Tell us more — accommodation tips, festival schedules, food recommendations, or anything else..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="source">How Did You Hear About Us?</label>
+          <select id="source">
+            <option value="">-- Select --</option>
+            <option value="google">Google Search</option>
+            <option value="friend">Friend / Family Recommendation</option>
+            <option value="social">Social Media</option>
+            <option value="travel">Travel Website / Blog</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button class="btn btn-primary" onclick="submitEnquiry()" style="width:100%; padding:1rem; font-size:1.05rem; margin-top:0.5rem; border-radius:10px;">
+          🙏 Submit Enquiry
+        </button>
+
+        <div class="form-msg success" id="successMsg">✅ Thank you! Your enquiry has been submitted successfully. We will get back to you shortly.</div>
+        <div class="form-msg error" id="errorMsg"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--cream); padding:4rem 2rem;">
+    <div style="max-width:900px; margin:0 auto; text-align:center;">
+      <h2 style="font-family:'Yatra One',cursive; color:var(--saffron); font-size:2rem; margin-bottom:0.5rem;">We Are Here to Help</h2>
+      <p style="color:var(--text-light); margin-bottom:2.5rem;">Here is what we can assist you with</p>
+      <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center;">
+        <div style="background:var(--warm-white); border-radius:14px; padding:1.5rem; flex:1; min-width:180px; box-shadow:0 4px 16px var(--shadow); border-top:4px solid var(--saffron);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🗺️</div>
+          <strong style="color:var(--maroon);">Trip Planning</strong>
+          <p style="color:var(--text-light); font-size:0.85rem; margin-top:0.3rem; line-height:1.5;">Customized itineraries for your visit to Solapur and nearby destinations.</p>
+        </div>
+        <div style="background:var(--warm-white); border-radius:14px; padding:1.5rem; flex:1; min-width:180px; box-shadow:0 4px 16px var(--shadow); border-top:4px solid var(--gold);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🏨</div>
+          <strong style="color:var(--maroon);">Accommodation Tips</strong>
+          <p style="color:var(--text-light); font-size:0.85rem; margin-top:0.3rem; line-height:1.5;">Guidance on the best places to stay during your visit.</p>
+        </div>
+        <div style="background:var(--warm-white); border-radius:14px; padding:1.5rem; flex:1; min-width:180px; box-shadow:0 4px 16px var(--shadow); border-top:4px solid var(--peacock);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🎉</div>
+          <strong style="color:var(--maroon);">Festival Schedules</strong>
+          <p style="color:var(--text-light); font-size:0.85rem; margin-top:0.3rem; line-height:1.5;">Stay informed about upcoming festivals and events in Solapur.</p>
+        </div>
+        <div style="background:var(--warm-white); border-radius:14px; padding:1.5rem; flex:1; min-width:180px; box-shadow:0 4px 16px var(--shadow); border-top:4px solid var(--maroon);">
+          <div style="font-size:2rem; margin-bottom:0.5rem;">🛺</div>
+          <strong style="color:var(--maroon);">Local Transport</strong>
+          <p style="color:var(--text-light); font-size:0.85rem; margin-top:0.3rem; line-height:1.5;">Help with getting around the city and reaching nearby pilgrimage towns.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">🪔 Solapur</div>
+    <p>Explore the spiritual heart of Maharashtra</p>
+    <p style="margin-top:0.8rem;">
+      <a href="index.html">Home</a> &nbsp;|&nbsp;
+      <a href="places.html">Places</a> &nbsp;|&nbsp;
+      <a href="culture.html">Culture</a> &nbsp;|&nbsp;
+      <a href="travel.html">Travel Guide</a> &nbsp;|&nbsp;
+      <a href="food.html">Food</a> &nbsp;|&nbsp;
+      <a href="enquiry.html">Enquiry</a>
+    </p>
+    <p style="margin-top:1rem; font-size:0.8rem; opacity:0.5;">© 2025 Solapur Tourism. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const dateInput = document.getElementById('travelDate');
+      if (dateInput) {
+        dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+      }
+    })();
+
+    function getVal(id) { return document.getElementById(id).value.trim(); }
+
+    function showError(msg) {
+      const el = document.getElementById('errorMsg');
+      el.textContent = '⚠️ ' + msg;
+      el.style.display = 'block';
+      document.getElementById('successMsg').style.display = 'none';
+      setTimeout(() => { el.style.display = 'none'; }, 5000);
+    }
+
+    function validateEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+    function validatePhone(phone) { return /^[6-9]\d{9}$/.test(phone); }
+
+    function submitEnquiry() {
+      const name    = getVal('fullName');
+      const email   = getVal('email');
+      const phone   = getVal('phone');
+      const interest = getVal('interest');
+      const message = getVal('message');
+
+      if (!name)                  { showError('Please enter your full name.'); return; }
+      if (name.length < 3)        { showError('Name must be at least 3 characters.'); return; }
+      if (!email)                 { showError('Please enter your email address.'); return; }
+      if (!validateEmail(email))  { showError('Please enter a valid email address.'); return; }
+      if (!phone)                 { showError('Please enter your phone number.'); return; }
+      if (!validatePhone(phone))  { showError('Please enter a valid 10-digit mobile number starting with 6–9.'); return; }
+      if (!interest)              { showError('Please select your primary interest.'); return; }
+      if (!message)               { showError('Please write a message or describe your query.'); return; }
+      if (message.length < 20)    { showError('Message is too short. Please provide at least 20 characters.'); return; }
+
+      const enquiryData = {
+        name, email, phone,
+        city:       getVal('city')       || 'Not provided',
+        travelDate: getVal('travelDate') || 'Not specified',
+        groupSize:  document.getElementById('groupSize').value  || 'Not specified',
+        interest,
+        places:     document.getElementById('places').value     || 'Not specified',
+        transport:  document.getElementById('transport').value  || 'Not specified',
+        message,
+        source:     document.getElementById('source').value     || 'Not specified',
+        submittedAt: new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })
+      };
+
+      console.log('=== New Solapur Tourism Enquiry ===');
+      console.table(enquiryData);
+
+      ['fullName','email','phone','city','travelDate','message'].forEach(id => {
+        document.getElementById(id).value = '';
+      });
+      ['groupSize','interest','places','transport','source'].forEach(id => {
+        document.getElementById(id).selectedIndex = 0;
+      });
+
+      document.getElementById('successMsg').style.display = 'block';
+      document.getElementById('errorMsg').style.display = 'none';
+      document.getElementById('successMsg').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  </script>
+
+</body>
+</html>
