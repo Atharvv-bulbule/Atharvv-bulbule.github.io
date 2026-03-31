@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Places – Solapur</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .place-images {
+      display: flex;
+      gap: 12px;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .place-images img {
+      width: calc(50% - 6px);
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .place-images img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+    .place-images img.single {
+      width: 100%;
+    }
+    @media (max-width: 600px) {
+      .place-images img {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -31,6 +59,7 @@
     <h2 class="section-title">Spiritual & Historic Destinations</h2>
     <p class="section-subtitle">From ancient temples to medieval forts — Solapur has it all</p>
 
+    <!-- Siddheshwar Temple -->
     <div class="place-block fade-in">
       <div class="place-icon">🛕</div>
       <div>
@@ -38,9 +67,14 @@
         <span class="tag">Spiritual</span><span class="tag">Must Visit</span>
         <p>Siddheshwar Temple is one of the most important spiritual landmarks in Solapur. Dedicated to Lord Siddheshwar, a form of Lord Shiva, the temple is located near the peaceful Siddheshwar Lake in the center of the city.</p>
         <p>Thousands of devotees visit the temple every day. The temple becomes especially crowded during the Siddheshwar Yatra festival held every year in January.</p>
+        <div class="place-images">
+          <img src="images/siddeshwar.jpg" alt="Siddheshwar Temple" />
+          <img src="images/siddeshwar_night.jpg" alt="Siddheshwar Temple at Night" />
+        </div>
       </div>
     </div>
 
+    <!-- Pandharpur -->
     <div class="place-block fade-in">
       <div class="place-icon">🌊</div>
       <div>
@@ -48,9 +82,14 @@
         <span class="tag">Pilgrimage</span><span class="tag teal">~70 km away</span>
         <p>Pandharpur is one of the most sacred pilgrimage towns in Maharashtra and is located about 70 km from Solapur. It is famous for the Vitthal Rukmini Temple dedicated to Lord Vitthal.</p>
         <p>The town becomes a major spiritual center during the Ashadhi and Kartiki Ekadashi festivals when millions of devotees participate in the Wari pilgrimage.</p>
+        <div class="place-images">
+          <img src="images/pandharpur1.jpg" alt="Pandharpur Temple" />
+          <img src="images/pandharpur2.jpg" alt="Pandharpur Pilgrimage" />
+        </div>
       </div>
     </div>
 
+    <!-- Akkalkot -->
     <div class="place-block fade-in">
       <div class="place-icon">🙏</div>
       <div>
@@ -61,6 +100,7 @@
       </div>
     </div>
 
+    <!-- Solapur Fort -->
     <div class="place-block fade-in">
       <div class="place-icon">🏰</div>
       <div>
@@ -70,6 +110,23 @@
         <p>The structure reflects the military architecture of medieval India and represents the rich historical heritage of Solapur.</p>
       </div>
     </div>
+
+    <!-- Tuljapur -->
+    <div class="place-block fade-in">
+      <div class="place-icon">🔱</div>
+      <div>
+        <h2>Tuljapur</h2>
+        <span class="tag">Spiritual</span><span class="tag teal">~45 km away</span>
+        <p>Tuljapur is home to the famous Tulja Bhavani Temple, one of the three and a half Shakti Peethas of Maharashtra. The goddess Tulja Bhavani is the Kuldevi (family deity) of many Maharashtrian families, including the Maratha warrior king Chhatrapati Shivaji Maharaj.</p>
+        <p>The temple draws lakhs of pilgrims throughout the year, especially during Navratri, when the atmosphere is filled with devotion and festivity.</p>
+        <div class="place-images">
+          <img src="images/tuljapur1.jpg" alt="Tuljapur Temple" />
+          <img src="images/tuljapur2.jpg" alt="Tulja Bhavani Temple" />
+          <img src="images/tuljapur3.jpg" alt="Tuljapur Pilgrimage" style="width:100%;" />
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <div style="background:linear-gradient(135deg,var(--saffron),var(--gold)); padding:3rem 2rem; text-align:center;">
@@ -77,7 +134,7 @@
       <h2 style="font-family:'Yatra One',cursive; color:#fff; font-size:1.8rem; margin-bottom:1.5rem;">At a Glance</h2>
       <div style="display:flex; gap:1.5rem; flex-wrap:wrap; justify-content:center;">
         <div style="background:rgba(255,255,255,0.22); border-radius:12px; padding:1.2rem 2rem; color:#fff; flex:1; min-width:150px;">
-          <div style="font-size:2.2rem; font-family:'Yatra One',cursive;">4+</div>
+          <div style="font-size:2.2rem; font-family:'Yatra One',cursive;">5+</div>
           <div style="font-size:0.9rem;">Major Destinations</div>
         </div>
         <div style="background:rgba(255,255,255,0.22); border-radius:12px; padding:1.2rem 2rem; color:#fff; flex:1; min-width:150px;">
