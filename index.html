@@ -1,4 +1,54 @@
-       <div class="section-heading">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atharvv K Bulbule | Student Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">Atharvv</a>
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#projects">Projects</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">B.Tech CSE [AIML] Student</p>
+        <h1>Atharvv K Bulbule</h1>
+        <p class="hero-text">
+          A curious mind driven by technology, creativity, and continuous learning. I love exploring new ideas,
+          solving problems, and building meaningful digital experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="assets/profile.png" alt="Portrait of Atharvv K Bulbule" />
+        <div class="hero-card">
+          <strong>MIT Vishwaprayag University</strong>
+          <span>Solapur | CSE AIML | 2025-29</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
         <p class="eyebrow">About Me</p>
         <h2>Creative learner with a builder mindset</h2>
       </div>
@@ -95,7 +145,7 @@
           </div>
         </article>
 
-        <article class="project-card">
+       <article class="project-card">
           <div class="project-visual design-thinking">DT</div>
           <div class="project-body">
             <h3>Design Thinking Project</h3>
@@ -121,39 +171,29 @@
       </div>
     </section>
 
-    <section class="section gallery" id="gallery">
-      <div class="section-heading">
-        <p class="eyebrow">Gallery</p>
-        <h2>Photographs and certificates in one place</h2>
-      </div>
+    <article class="project-card">
+          <div class="project-visual design-thinking">DT</div>
+          <div class="project-body">
+            <h3>Design Thinking Project</h3>
+            <p>
+              A human-centered project built around identifying user needs, brainstorming ideas, prototyping,
+              and improving solutions through feedback.
+            </p>
+            <a href="https://github.com/Atharvv-bulbule" target="_blank" rel="noreferrer">View GitHub</a>
+          </div>
+        </article>
 
-      <div class="gallery-controls" aria-label="Gallery filters">
-        <button class="filter-btn active" type="button" data-filter="all">All</button>
-        <button class="filter-btn" type="button" data-filter="photo">Photo</button>
-        <button class="filter-btn" type="button" data-filter="certificate">Certificates</button>
-      </div>
-
-      <div class="gallery-grid">
-        <button class="gallery-item" type="button" data-category="photo" data-src="assets/profile.png">
-          <img src="assets/profile.png" alt="Formal portrait of Atharvv" />
-          <span>Profile Photo</span>
-        </button>
-        <button class="gallery-item" type="button" data-category="certificate" data-src="assets/cisco.png">
-          <img src="assets/cisco.png" alt="Cisco certificate" />
-          <span>Cisco NetAcad</span>
-        </button>
-        <button class="gallery-item" type="button" data-category="certificate" data-src="assets/coursera-ace.png">
-          <img src="assets/coursera-ace.png" alt="Coursera ACE certificate" />
-          <span>Applied Chemistry</span>
-        </button>
-        <button class="gallery-item" type="button" data-category="certificate" data-src="assets/matlab.png">
-          <img src="assets/matlab.png" alt="MATLAB certificate" />
-          <span>MATLAB</span>
-        </button>
-        <button class="gallery-item" type="button" data-category="certificate" data-src="assets/yuva-ai.png">
-          <img src="assets/yuva-ai.png" alt="Yuva AI certificate" />
-          <span>Yuva AI</span>
-        </button>
+        <article class="project-card">
+          <div class="project-visual ace">ACE</div>
+          <div class="project-body">
+            <h3>ACE Project</h3>
+            <p>
+              A course-based project connected with Applied Chemistry and engineering foundations, showing
+              structured learning and practical academic work.
+            </p>
+            <a href="https://github.com/Atharvv-bulbule" target="_blank" rel="noreferrer">View GitHub</a>
+          </div>
+        </article>
       </div>
     </section>
 
